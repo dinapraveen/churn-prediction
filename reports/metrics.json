@@ -1,0 +1,25 @@
+{
+  "data_summary": {
+    "rows": 5000,
+    "churn_rate": 0.3072,
+    "missing_values": 50,
+    "churn_by_contract": {
+      "Month-to-month": 0.446,
+      "One year": 0.184,
+      "Two year": 0.065
+    }
+  },
+  "modeling": {
+    "cv_roc_auc": {
+      "logistic_regression": 0.8122,
+      "random_forest": 0.795,
+      "gradient_boosting": 0.8015
+    },
+    "best_model": "logistic_regression",
+    "test": {
+      "roc_auc": 0.8128,
+      "accuracy": 0.779,
+      "f1": 0.5854
+    }
+  }
+}
